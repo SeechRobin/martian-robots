@@ -4,6 +4,7 @@
   "description": "Red Badger Coding Challenge",
   "main": "app.js",
   "scripts": {
+    "start": "node ./src/read.js",
     "test": "mocha ./src/test/**/*.spec.js || true"
   },
   "repository": {
