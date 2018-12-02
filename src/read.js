@@ -1,4 +1,5 @@
 const readline = require("readline");
+const commandcenter = require("./CommandCenter/command-center");
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -17,5 +18,5 @@ rl.on("line", function(line) {
 });
 
 rl.on("close", function(line) {
-  console.log(lines);
+  commandcenter.command(lines);
 });
