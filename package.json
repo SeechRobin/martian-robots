@@ -1,0 +1,19 @@
+{
+  "name": "martian-robots",
+  "version": "1.0.0",
+  "description": "Red Badger Coding Challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeechRobin/martian-robots.git"
+  },
+  "author": "Robin Mukanganise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeechRobin/martian-robots/issues"
+  },
+  "homepage": "https://github.com/SeechRobin/martian-robots#readme"
+}
