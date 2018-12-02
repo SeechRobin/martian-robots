@@ -1,4 +1,5 @@
 const processor = require("./processor");
+const printer = require("../printer");
 
 /**
  * Robots and Map Object processing
@@ -52,5 +53,5 @@ function execute(data) {
 exports.command = function(input) {
   const data = processor.process(input);
   const finalRobotPostions = execute(data);
-  console.log(finalRobotPostions);
+  printer.print(finalRobotPostions);
 };
