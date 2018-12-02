@@ -3,8 +3,8 @@ class Map {
    * Create Map Object with upper right coordinates
    * Bottom left origin set to (0,0)
    * scents array to keep track of dangerous grid positions
-   * @param {Number} maxX
-   * @param {Number} maxY
+   * @param {Number} maxX maximum x coordinate
+   * @param {Number} maxY maximum y coordinate
    */
   constructor(maxX, maxY) {
     this.maxX = maxX;

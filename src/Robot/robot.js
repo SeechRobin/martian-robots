@@ -3,10 +3,10 @@ class Robot {
   /**
    * Create Robot with (x,y) coordinates, heading and the instructions
    * to operate the Robot
-   * @param {Number} x
-   * @param {Number} y
-   * @param {String} heading
-   * @param {Array} instructions
+   * @param {Number} x position
+   * @param {Number} y position
+   * @param {String} heading the robots heading/direction
+   * @param {Array} instructions these are the direction "FLRF" the Robot can take
    */
   constructor(x, y, heading, instructions) {
     (this.position = {
@@ -65,6 +65,34 @@ class Robot {
       this.position.heading =
         DIRECTIONS[DIRECTIONS.indexOf(this.position.heading) + 1];
     }
+  }
+  /**
+   * Return true if anyof the coordinates are greater than Max or less than origin.
+   * @param {Object} map the map which has origin (0,0) and (maxX,maxY)
+   */
+  isOutOfBounds(map) {
+    return (
+      this.position.x > map.maxX ||
+      this.position.x < map.minX ||
+      this.position.y > map.maxY ||
+      this.position.y < map.minY
+    );
+  }
+
+  /**
+   * Check if Robot is in a smelly postion
+   * @param {*} map the map which has origin (0,0) and (maxX,maxY)
+   */
+  isPositionSmelly(map) {
+    return map.scents.some(scent => this.areTheyEqual(this.position, scent));
+  }
+  /**
+   * Check equality on the two postions
+   * @param {*} position1
+   * @param {*} position2
+   */
+  areTheyEqual(position1, position2) {
+    return position1.x === position2.x && position1.y === position2.y;
   }
 }
 
