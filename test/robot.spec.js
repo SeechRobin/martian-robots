@@ -1,6 +1,6 @@
 const assert = require("chai").assert;
 const expect = require("chai").expect;
-const Robot = require("../Robot/robot");
+const Robot = require("../src/Robot/robot");
 
 let robot = null;
 describe("Robot() ", function() {

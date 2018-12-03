@@ -50,7 +50,7 @@ $ npm run test
 ## Improvements
 
 - Add input validation
-- improve command-center module for easy testing
+- Improve command-center module for easy testing
 
 ### The Problem 
 

@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const Map = require("../Map/map");
+const Map = require("../src/Map/map");
 
 let map = null;
 
