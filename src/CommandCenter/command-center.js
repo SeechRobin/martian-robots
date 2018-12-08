@@ -28,18 +28,18 @@ function execute(data) {
 
         const outOfBounds = robot.isOutOfBounds(map);
 
-        if (smelly && outOfBounds) {
-          robot.position = position; // move the robot back to the last safe space
-        } else if (outOfBounds) {
+        if (outOfBounds) {
+          if (smelly) {
+            robot.position = position; // move the robot back to the last safe space
+            continue;
+          }
           map.scents.push({ x: position.x, y: position.y });
           robot.lost = true;
           robot.position = position;
           break;
-        } else {
-          continue;
         }
       } else {
-        continue;
+        throw "Illegal Instruction";
       }
     }
     finalRobotPositions = [...finalRobotPositions, robot];
