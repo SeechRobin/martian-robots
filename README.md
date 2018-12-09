@@ -17,7 +17,7 @@ $ yarn install
 ## Running
 
 ```sh
-$ npm start
+$ yarn start
 ```
 
 Just paste this in terminal and press Return/Enter the process is teminated by an empty line.
