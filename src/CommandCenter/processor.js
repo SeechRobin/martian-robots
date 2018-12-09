@@ -53,6 +53,7 @@ function splitInstructions(line) {
 /**
  * In this module we process the input and convert
  * it to Map and Robot objects
+ *  @param {Array} input
  */
 exports.process = function(input) {
   const data = parseInput(input);
