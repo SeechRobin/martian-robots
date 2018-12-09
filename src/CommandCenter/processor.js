@@ -55,6 +55,6 @@ function splitInstructions(line) {
  * it to Map and Robot objects
  */
 exports.process = function(input) {
-  let data = parseInput(input);
+  const data = parseInput(input);
   return data;
 };

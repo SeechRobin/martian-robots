@@ -51,7 +51,7 @@ function execute(data) {
  * Command Center to drive the whole program
  */
 exports.command = function(input) {
-  const data = processor.process(input);
-  const finalRobotPostions = execute(data);
+  const robotAndMapData = processor.process(input);
+  const finalRobotPostions = execute(robotAndMapData);
   printer.print(finalRobotPostions);
 };
