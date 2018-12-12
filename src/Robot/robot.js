@@ -18,18 +18,6 @@ class Robot {
       (this.lost = false);
   }
 
-  getPostionX() {
-    return this.position.x;
-  }
-
-  getPostionY() {
-    return this.position.y;
-  }
-
-  getHeading() {
-    return this.position.heading;
-  }
-
   /**
    * Moves the robot forward if facing:
    * N: y+1
