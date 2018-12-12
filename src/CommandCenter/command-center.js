@@ -12,7 +12,7 @@ function execute(data) {
   let finalRobotPositions = [];
 
   for (let i = 0; i < robots.length; i++) {
-    let robot = data.robots[i];
+    let robot = robots[i];
     for (let j = 0; j < robot.instructions.length; j++) {
       let operation = robot.instructions[j];
 

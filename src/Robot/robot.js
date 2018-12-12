@@ -10,12 +10,24 @@ class Robot {
    */
   constructor(x, y, heading, instructions) {
     (this.position = {
-      x: x,
-      y: y,
-      heading: heading
+      x,
+      y,
+      heading
     }),
       (this.instructions = instructions),
       (this.lost = false);
+  }
+
+  getPostionX() {
+    return this.position.x;
+  }
+
+  getPostionY() {
+    return this.position.y;
+  }
+
+  getHeading() {
+    return this.position.heading;
   }
 
   /**
