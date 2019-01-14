@@ -1,6 +1,6 @@
 # Martian Robots
 
-Red Badger Martian Robots Challenge
+Martian Robots Challenge
 
 ## Getting Started
 
